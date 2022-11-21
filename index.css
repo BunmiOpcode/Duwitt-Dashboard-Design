@@ -287,21 +287,22 @@ main{
     margin-top: 1.4rem;
 }
 
-main .right .righ{
+main .right .right-cont{
     display: flex;
     justify-content: space-around;
+    align-items: end;
     gap: 2rem;
     padding-right: 7rem;
 }
 
-.prof{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding: 0 30px 30px 0;
 }
 
-.prof .name{
+.nav .name{
     line-height: 30px;
     letter-spacing: 0.1px;
     font-size: 32px;
@@ -316,13 +317,13 @@ main .right .righ{
     text-align: right;
 }
 
-main .insight{
+main .wallet{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
 }
 
-main .insight > div{
+main .wallet > div{
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -331,11 +332,11 @@ main .insight > div{
     transition: all 300ms ease;
 }
 
-main .insight > div:hover{
+main .wallet > div:hover{
     box-shadow: none;
 }
 
-main .insight > div .icons{
+main .wallet > div .icons{
     background: var(--color-warning);
     padding: 0.5rem;
     border-radius: 50%;
@@ -344,19 +345,19 @@ main .insight > div .icons{
 }
 
 
-/* main .insight .icons{
+/* main .wallet .icons{
     
 } */
 
-main .insight .expenses .icons{
+main .wallet .expenses .icons{
     background: var(--color-primary-variant);
 }
 
-main .insight .trust-wallet .icons{
+main .wallet .trust-wallet .icons{
     background: var(--color-success-variant);
 }
 
-.insight .bitcoin, .insight .expenses, .insight .trust-wallet{
+.wallet .bitcoin, .wallet .expenses, .wallet .trust-wallet{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -368,7 +369,7 @@ main .insight .trust-wallet .icons{
     border-radius: 5px;   
 }
 
-main .insight .text h3{
+main .wallet .text h3{
     margin: 1rem 0 0.6rem;
     font-size: 20px;
     font-weight: 600;
@@ -376,7 +377,7 @@ main .insight .text h3{
     color: #000000
 }
 
-main .insight .text h1{
+main .wallet .text h1{
     margin: 1rem 0 0.6rem;
     font-size: 30px;
     font-weight: 600;
@@ -384,20 +385,20 @@ main .insight .text h1{
     color: #000000
 }
 
-main .insight .text h6{
+main .wallet .text h6{
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
 }
 
-/* *****************RECENT ORDERS********************* */
+/* ***************** ACTIVE TRADES ********************* */
 
-main .recent-orders{
+main .active-trades{
     margin-top: 42px;
     width: auto;
 }
 
-main .recent-orders table{
+main .active-trades table{
     background: var(--color-white);
     width:100%;
     border-collapse: collapse;
@@ -408,7 +409,7 @@ main .recent-orders table{
     font-size: inherit;
 }
 
-main .recent-orders table:hover{
+main .active-trades table:hover{
     box-shadow: none;
 }
 
@@ -450,14 +451,14 @@ main table tbody tr td .pic img{
     border-radius: 50%;
 }
 
-main .recent-orders .btn{
+main .active-trades .btn{
     color: var(--color-success);
     background: var(--color-dark);
     padding: 10px 30px;
     border-radius: 5px;
 }
 
-main .recent-orders #buy-offer{
+main .active-trades #buy-offer{
     color: #16CB3E;
     background: #79FFB942;
     padding: 10px 20px;
@@ -465,7 +466,7 @@ main .recent-orders #buy-offer{
     cursor: pointer;
 }
 
-main .recent-orders #sell-offer{
+main .active-trades #sell-offer{
     color: var(--color-danger);
     background: var(--color-danger-variant);
     padding: 10px 20px;
@@ -581,12 +582,12 @@ main .recent-activity{
         margin-top: 1.8rem;
     }
 
-    main .insight{
+    main .wallet{
         grid-template-columns: 1fr;
         gap: 0;
     }
 
-    main .recent-orders{
+    main .active-trades{
         width: 94%;
         position: absolute;
         left: 50%;
@@ -594,7 +595,7 @@ main .recent-activity{
         margin: 2rem 0 0 8.8rem;
     }
 
-    main .recent-orders table{
+    main .active-trades table{
         width: 83vw;
     }
 
@@ -674,30 +675,30 @@ main .recent-activity{
         padding: 0 1rem;
     }
 
-    main .prof .name{
+    main .nav .name{
         line-height: 3rem;
     }
 
-    main .insight{
+    main .wallet{
         grid-template-columns: 1fr;
         gap: 0;
     }
 
-    .insight .bitcoin, .insight .expenses, .insight .trust-wallet{
+    .wallet .bitcoin, .wallet .expenses, .wallet .trust-wallet{
         width: auto;
     }
 
-    main .recent-orders{
+    main .active-trades{
         position: relative;
         margin: 3rem 0 0 0;
         width: fit-content;
     }
 
-    main .recent-orders table{
+    main .active-trades table{
         width: auto;
     }
 
-    main .recent-orders #buy-offer, main .recent-orders #sell-offer{
+    main .active-trades #buy-offer, main .active-trades #sell-offer{
        background: none;
        padding: 0;
     }
@@ -721,7 +722,7 @@ main .recent-activity{
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
-    main .right .righ{
+    main .right .right-cont{
         padding-right: 5rem;
         
     }
@@ -763,19 +764,9 @@ main .recent-activity{
 
 @media screen and (max-width: 375px) {
 
-    main .right .righ{
+    main .right .right-cont{
         padding: 0;
     }
-
-    /* main .content p{
-        width: 300px;
-    }
-
-    main .content .link input{
-        width: fit-content;
-        padding-left: 10px;
-        margin: 0px 10px 5px 0;
-    } */
 
 }
 
