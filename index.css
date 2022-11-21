@@ -499,7 +499,6 @@ main .content h2{
     font-weight: 800;
 }
 
-
 main .content p{
     margin: 18px 0 18px 0;
     width: 400px;
@@ -751,6 +750,8 @@ main .recent-activity{
 
     main .con .content, main .con .recent-activity{
         width: auto;
+        padding: 10px 10px;
+        
     }
 
     main .content .link a{
