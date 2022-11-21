@@ -775,7 +775,7 @@ main .recent-activity{
     }
 
     main .content .link input{
-        width: auto;
+        width: fit-content;
         padding-left: 10px;
         margin: 0px 10px 5px 0;
     }
