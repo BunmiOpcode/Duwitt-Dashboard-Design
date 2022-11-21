@@ -515,7 +515,7 @@ main .content h4{
 }
 
 main .content .link input{
-    height: 45px;
+    height: 50px;
     width: 400px;
     border: 1px solid rgba(18, 18, 18, 0.2);
     margin-right: 20px;
@@ -750,7 +750,7 @@ main .recent-activity{
 
     main .con .content, main .con .recent-activity{
         width: auto;
-        padding: 10px 10px;
+        padding: 0p 15px;
         
     }
 
