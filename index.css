@@ -702,12 +702,6 @@ main .recent-activity{
        padding: 0;
     }
     
-    /* main .recent-orders #sell-offer{
-       
-        padding: 10px 20px;
-       
-    } */
-
     .right{
         width: 94%;
         margin: o auto 4rem;
@@ -729,6 +723,7 @@ main .recent-activity{
 
     main .right .righ{
         padding-right: 5rem;
+        justify-content: end;
         
     }
 
