@@ -48,8 +48,8 @@ body{
 .container{
     display: grid;
     width: 96%;
-    margin: 0 7rem auto auto;
-    gap: 5rem;
+    margin: 0 5rem auto auto;
+    gap: 50px;
     grid-template-columns: 20rem auto;
 }
 
@@ -58,7 +58,7 @@ img{
     width: 100%;
 }
 
-h1{
+/* h1{
     font-weight: 800;
     font-size: 1.8rem;
 }
@@ -81,7 +81,7 @@ p{
 
 h5{
     font-size: 0.77rem;
-}
+} */
 
 .danger{
     color: var(--color-danger);
@@ -94,6 +94,78 @@ h5{
 .warning{
     color: var(--color-warning);
 }
+
+/* ******RIGHT****** */
+
+.right{
+    margin-top: 1.4rem;
+}
+
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem; 
+    font-weight: 600;
+    font-size: 18px; 
+} 
+
+.right .top button{
+    display: none;
+}
+
+.right .toggler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+/* .right .toggler span{
+    width: 50px;
+    height: 100%;
+    background: red;
+} */
+
+/* ****************DROPDOWN***************** */
+
+/* The dropdown container */
+.dropdown {
+    /* float: left; */
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 50px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 aside{
     width: 290px;
@@ -116,7 +188,7 @@ aside .logo{
 aside .logo img{
     height: 82px;
     width: 196px; 
-    margin-left: 2rem; 
+    margin-left: 2rem;
 }
 
 aside .close{
@@ -183,8 +255,12 @@ aside .sidebar a.active{
     background: var(--color-success);
     color: var(--color-dark);
     border-radius: 4px;
-    margin: 0 9px;
+    margin: 0 7px;
     padding: 1rem 0rem 2rem 2rem;
+}
+
+aside .sidebar a.active h3{
+    margin-top: 6px;
 }
 
 aside .sidebar a.active span{
@@ -193,17 +269,29 @@ aside .sidebar a.active span{
 }
 
 aside .sidebar a:hover{
-    color: var(--color-info-dark);
+    background: var(--color-success);
+    color: var(--color-dark);
+    border-radius: 4px;
+    margin: 0 7px;
+    padding: 1rem 0rem 1rem 1rem;
 }
 
 aside .sidebar a:hover span{
     margin-left: 1rem;
+    color: var(--color-dark);
 }
 
 /* ****************** main ******************** */
 
 main{
     margin-top: 1.4rem;
+}
+
+main .right .righ{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-right: 7rem;
 }
 
 .prof{
@@ -220,10 +308,6 @@ main{
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.1px;
-}
-
-.notification{
-    position: relative;
 }
 
 .right .top .profile{
@@ -260,6 +344,10 @@ main .insight > div .icons{
 }
 
 
+/* main .insight .icons{
+    
+} */
+
 main .insight .expenses .icons{
     background: var(--color-primary-variant);
 }
@@ -277,29 +365,47 @@ main .insight .trust-wallet .icons{
     background-position: right 0;
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 
-main .insight h3{
+main .insight .text h3{
     margin: 1rem 0 0.6rem;
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #000000
+}
+
+main .insight .text h1{
+    margin: 1rem 0 0.6rem;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #000000
+}
+
+main .insight .text h6{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
 }
 
 /* *****************RECENT ORDERS********************* */
 
 main .recent-orders{
-    margin-top: 2rem;
+    margin-top: 42px;
+    width: auto;
 }
 
 main .recent-orders table{
     background: var(--color-white);
-    width:97%;
-    margin-left: 2rem;
+    width:100%;
     border-collapse: collapse;
-    text-align: center;
+    border-radius: 5px;
+    text-align: left;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    font-size: inherit;
 }
 
 main .recent-orders table:hover{
@@ -309,16 +415,22 @@ main .recent-orders table:hover{
 main table caption{
     text-align: left;
     padding: 13px 0 13px 35px;
-    height: 4rem;
+    height: 70px;
     border-bottom: 1px solid var(--color-light);
     background: #001C15;
     color: var(--color-success);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 main table tbody tr{
-    height: 4rem;
+    height: 80px;
     color: #121212;
-    border-bottom: 3px solid var(--color-success);
+    border-bottom: 7px solid rgba(0, 254, 168, 0.15);;
+    
 }
 
 main table tbody tr:last-child{
@@ -326,8 +438,6 @@ main table tbody tr:last-child{
 }
 
 main table tbody tr td .pic{
-    
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,6 +462,7 @@ main .recent-orders #buy-offer{
     background: #79FFB942;
     padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 main .recent-orders #sell-offer{
@@ -359,6 +470,7 @@ main .recent-orders #sell-offer{
     background: var(--color-danger-variant);
     padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ****************REFER AND EARN * **************/
@@ -366,13 +478,13 @@ main .recent-orders #sell-offer{
 main .con{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 50px;
     margin-top: 2rem;
 }
 
 main .content{
-    height: 284px;
-    width: 675px;
+    height: 300px;
+    width: 700px;
     border-radius: 10px;
     background: var(--color-white);
     padding: 10px 0 0 30px;
@@ -388,12 +500,11 @@ main .content h2{
 }
 
 
-main .content h3{
+main .content p{
     margin: 18px 0 18px 0;
-    height: 32px;
-    width: 300px;
-    font-size: 12px;
-    line-height: 16px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 600;
 }
 
@@ -412,7 +523,7 @@ main .content .link input{
 }
 
 main .content .link input::placeholder{
-    padding-left: 14px;
+    padding-left: 1px;
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
@@ -421,10 +532,11 @@ main .content .link input::placeholder{
 main .content .link a{
     color: var(--color-success);
     background: var(--color-dark);
-    padding: 10px 30px;
+    padding: 15px 18px;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
+    line-height: 22px;
 }
 
 main .content .socials{
@@ -439,8 +551,8 @@ main .content .socials .social span{
 }
 
 main .recent-activity{
-    height: 284px;
-    width: 450px;
+    height: 300px;
+    width: 519px;
     border-radius: 10px;
     background: var(--color-white);
     padding: 30px;
@@ -448,55 +560,12 @@ main .recent-activity{
 
 }
 
-/* ******RIGHT****** */
-
-.right{
-    margin-top: 1.4rem;
-}
-
-.right .top{
-    display: flex;
-    justify-content: end;
-    gap: 2rem;    
-} 
-
-.right .top button{
-    display: none;
-}
-
-.right .theme-toggler{
-    background: var(--color-light);
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    width: 4.2rem;
-    cursor: pointer;
-    border-radius: var(--border-radius-1);
-}
-
-.right .theme-toggler span{
-    font-size: 1.2rem;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right .theme-toggler span.active{
-    background: var(--color-primary);
-    color: white;
-    border-radius: var(--border-radius-1);
-}
-
 /* **************MEDIA QUERIES FOR LAPTOPS**************** */
 
 @media screen and (max-width: 1200px) {
     .container{
         width: 94%;
-        grid-template-columns:7rem auto 23rem ;
+        grid-template-columns:10rem auto ;
     }
 
     aside .sidebar h3{ 
@@ -571,6 +640,10 @@ main .recent-activity{
         display: inline;
     }
 
+    aside .sidebar{ 
+        height: 900px;
+    }
+
     aside .sidebar h3{
         display: inline;
     }
@@ -591,9 +664,18 @@ main .recent-activity{
         background: var(--color-white);
     }
 
+    
+    .right .top .profile p{
+        display: none;
+    }
+
     main{
         margin-top: 8rem;
         padding: 0 1rem;
+    }
+
+    main .prof .name{
+        line-height: 3rem;
     }
 
     main .insight{
@@ -601,16 +683,30 @@ main .recent-activity{
         gap: 0;
     }
 
+    .insight .bitcoin, .insight .expenses, .insight .trust-wallet{
+        width: auto;
+    }
+
     main .recent-orders{
         position: relative;
         margin: 3rem 0 0 0;
-        width: 100%;
+        width: fit-content;
     }
 
     main .recent-orders table{
-        width: 100%;
-        margin: 0;
+        width: auto;
     }
+
+    main .recent-orders #buy-offer, main .recent-orders #sell-offer{
+       background: none;
+       padding: 0;
+    }
+    
+    /* main .recent-orders #sell-offer{
+       
+        padding: 10px 20px;
+       
+    } */
 
     .right{
         width: 94%;
@@ -631,13 +727,15 @@ main .recent-activity{
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
-    .right .top .theme-toggler{
-        width: 4.4rem;
-        position: absolute;
-        left: 66%;
+    main .right .righ{
+        padding-right: 5rem;
+        
     }
-    
 
+    .dropdown-content {
+        right: 20px; 
+      }
+    
     .right .top button{
         display: inline-block;
         background: transparent;
@@ -651,5 +749,42 @@ main .recent-activity{
         font-size: 2rem;
     }
 
+    main .con{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    main .con .content, main .con .recent-activity{
+        width: 100vw;
+    }
+
+
+    main .content .link input::placeholder{
+        font-size:inherit;  
+    }
+    
+    main .content .link a{
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
     
 }
+
+@media screen and (max-width: 375px) {
+
+    main .right .righ{
+        padding: 0;
+    }
+
+    main .content p{
+        width: 300px;
+    }
+
+    main .content .link input{
+        width: auto;
+        padding-left: 10px;
+        margin: 0px 10px 5px 0;
+    }
+
+}
+
