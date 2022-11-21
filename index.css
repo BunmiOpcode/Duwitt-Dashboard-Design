@@ -752,7 +752,7 @@ main .recent-activity{
         width: auto;
     }
 
-
+/* 
     main .content .link input::placeholder{
         font-size:inherit;  
     }
@@ -760,7 +760,7 @@ main .recent-activity{
     main .content .link a{
         padding: 10px 20px;
         margin-top: 5px;
-    }
+    } */
     
 }
 
@@ -770,7 +770,7 @@ main .recent-activity{
         padding: 0;
     }
 
-    main .content p{
+    /* main .content p{
         width: 300px;
     }
 
@@ -778,7 +778,7 @@ main .recent-activity{
         width: fit-content;
         padding-left: 10px;
         margin: 0px 10px 5px 0;
-    }
+    } */
 
 }
 
