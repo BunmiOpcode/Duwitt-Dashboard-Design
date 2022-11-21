@@ -524,7 +524,7 @@ main .content .link input{
 
 main .content .link input::placeholder{
     padding-left: 3px;
-    font-size: 16px;
+    font-size: inherit;
     font-weight: 600;
     line-height: 21px;
 }
