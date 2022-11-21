@@ -723,7 +723,6 @@ main .recent-activity{
 
     main .right .righ{
         padding-right: 5rem;
-        justify-content: end;
         
     }
 
@@ -750,7 +749,7 @@ main .recent-activity{
     }
 
     main .con .content, main .con .recent-activity{
-        width: 100vw;
+        width: auto;
     }
 
 
