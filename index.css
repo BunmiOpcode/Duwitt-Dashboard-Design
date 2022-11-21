@@ -722,10 +722,10 @@ main .recent-activity{
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
-    main .right .right-cont{
+    /* main .right .right-cont{
         padding-right: 5rem;
         
-    }
+    } */
 
     .dropdown-content {
         right: 20px; 
@@ -766,6 +766,7 @@ main .recent-activity{
 
     main .right .right-cont{
         padding: 0;
+        align-items: end;
     }
 
 }
