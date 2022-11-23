@@ -700,7 +700,7 @@ main .recent-activity{
     .right .right-cont{
             width: 1rem;
             position: absolute;
-            right: auto;
+            left: 70%;
     }
 
     .right .right-cont .notification,.right .right-cont .profile{
