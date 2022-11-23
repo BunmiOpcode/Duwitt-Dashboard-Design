@@ -701,7 +701,6 @@ main .recent-activity{
             width: 1rem;
             position: absolute;
             left: auto;
-            gap: 3rem !important;
     }
 
     .right .right-cont .notification,.right .right-cont .profile{
