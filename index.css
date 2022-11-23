@@ -698,10 +698,10 @@ main .recent-activity{
     }
 
     .right .right-cont{
-            width: 1rem;
+           background:red;
             position: absolute;
-            left: 70%;
-            gap: 1rem !important;
+            left: 65;
+            gap: 2rem !important;
     }
 
     .right .right-cont .notification,.right .right-cont .profile{
