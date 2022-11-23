@@ -697,6 +697,12 @@ main .recent-activity{
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
+    .right .right-cont{
+            width: 4.4rem;
+            position: absolute;
+            left: 66%;
+    }
+
     .dropdown-content {
         right: 20px; 
       }
