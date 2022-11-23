@@ -701,6 +701,7 @@ main .recent-activity{
             width: 1rem;
             position: absolute;
             left: 70%;
+            gap: 2rem;
     }
 
     .right .right-cont .toggler p{
