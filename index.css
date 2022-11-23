@@ -700,7 +700,7 @@ main .recent-activity{
     .right .right-cont{
            background:red;
             position: absolute;
-            left: 65;
+            left: 70;
             gap: 2rem !important;
     }
 
