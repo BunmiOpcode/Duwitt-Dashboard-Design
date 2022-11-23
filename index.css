@@ -701,13 +701,11 @@ main .recent-activity{
             width: 1rem;
             position: absolute;
             left: 70%;
-            gap: 2rem;
+            gap: 3rem;
     }
 
     .right .right-cont .notification,.right .right-cont .profile{
-       line-height: 20px;
-       background: red;
-       padding-top: 3rem;
+       padding-top: 2rem;
 }
 
 
