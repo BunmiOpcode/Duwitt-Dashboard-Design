@@ -704,9 +704,12 @@ main .recent-activity{
             gap: 2rem;
     }
 
-    .right .right-cont .toggler p{
-        width: 100px;
+    .right .right-cont .notification,.right .right-cont .profile{
+       line-height: 20px;
+       background: red;
+       padding-top: 3rem;
 }
+
 
     .dropdown-content {
         right: 20px; 
