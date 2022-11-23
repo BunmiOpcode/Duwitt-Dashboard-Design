@@ -701,7 +701,7 @@ main .recent-activity{
         background:red;
         position: absolute;
         left: 65%;
-        /* gap: 2rem !important; */
+        gap: .5rem !important;
     }
 
     .right .right-cont .notification,.right .right-cont .profile{
