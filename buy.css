@@ -1,0 +1,293 @@
+.container-back{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+
+
+.container-first{
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 63px;
+    font-size: 18px;
+    gap: 5rem;
+}
+
+.container-first-group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container-first-group input{
+    height: 60px;
+    width: 400px;
+    border-radius: 4px;
+    background: var(--color-white);
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.container-first-group input::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(58, 58, 58, 0.3);
+}
+
+.container-first-group label{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.container-first-group img{
+   margin-top: 2rem;
+}
+
+.container-first-group button{
+    margin-top: 2rem;
+    padding: 18px 90px;
+    background: var(--color-dark);
+    border-radius: 5px;
+    color:var(--color-success);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+ }
+
+ /* ***********SECOND SECTION************ */
+
+ .container-second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    margin-top: 2rem;
+    margin-bottom: 65px;
+ }
+
+ .container-second-buyers-profile-content{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    width: 800px;
+    background: var(--color-white);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+ }
+
+ .container-second-buyers-profile-top{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.2);
+    box-sizing: border-box;
+    height: 135px;
+    padding: 10px 50px;
+    gap: 2rem;
+ }
+
+ .container-second-buyers-profile-top-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+
+ .container-second-buyers-profile-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+
+ .container-second-buyers-profile-right img{
+    width: 24px;
+    height: 18px;
+ }
+
+ .container-second-buyers-profile-right-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .container-second-buyers-profile-bottom, .container-second-about-content{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .verified{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #018752;
+    display: flex; 
+ }
+
+ .verified img{
+    width: 20px;
+    height: 20px;
+ }
+
+ .container-second-buyers-profile-bottom ul li{
+    margin: 20px;
+ }
+
+ .profile-bottom-last{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+ }
+
+ .container-second-about-content{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    width: 530px;
+    background: #FFFFFF;
+    border: 1px solid rgba(58, 58, 58, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+ }
+
+ .container-second-about-content-right li{
+    text-align: right;
+    margin: 50px;
+ }
+
+ .container-second-about-content-left li{
+    text-align: left;
+    margin: 50px;
+ }
+
+ /* ***************OFFER TERMS**************** */
+ .container-third-offer-terms{
+    background: rgba(0, 254, 168, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+ }
+
+ .container-third-offer-terms h2{
+    padding-left: 20px;
+ }
+
+
+ .container-third-offer-terms-line{
+    width: 3px;
+    height:250px;
+    background: rgba(0, 0, 0, 0.2);
+ }
+
+ .container-third-offer-terms-duwitt-terms, .container-third-offer-terms-vendors-terms{
+    width: 600px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: rgba(0, 0, 0, 0.8);
+ }
+
+ .container-third-offer-terms{
+   padding: 35px;
+ }
+
+ .container-third-offer-terms ol li{
+    margin: 20px;
+  }
+
+    /************** FEEDBACK FROM TRADERS ********************/
+    .container-feeback-trades{
+        margin: 43px auto 81px auto;
+        width: auto;
+    }
+    
+   .container-feeback-trades table{
+        background: var(--color-white);
+        width:100%;
+        border-collapse: collapse;
+        border-radius: 5px;
+        text-align: left;
+        box-shadow: var(--box-shadow);
+        transition: all 300ms ease;
+        font-size: inherit;
+    }
+    
+    .container-feeback-trades table:hover{
+        box-shadow: none;
+    }
+    
+   table caption{
+        text-align: left;
+        padding: 13px 0 13px 35px;
+        height: 75px;
+        border-bottom: 1px solid var(--color-light);
+        background: #001C15;
+        color: var(--color-success);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+  table tbody tr{
+        height: 98px;
+        color: #121212;
+        border-bottom: 7px solid rgba(0, 254, 168, 0.15);;
+        
+    }
+    
+    table tbody tr:last-child{
+        border: none;
+    }
+    
+    .container-feeback-trades-profile{
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        gap: 1rem;
+    }
+    
+    .container-feeback-trades-profile .profile-image{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+
+    table tbody .flag{
+        width: 24px;
+        height: 18px;
+
+    }
+     .container-feeback-trades .btn{
+        color: var(--color-success);
+        background: var(--color-dark);
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
+    
+    .container-feeback-trades #buy-offer{
+        color: #16CB3E;
+        background: #79FFB942;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .container-feeback-trades #sell-offer{
+        color: var(--color-danger);
+        background: var(--color-danger-variant);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }

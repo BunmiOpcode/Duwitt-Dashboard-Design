@@ -140,9 +140,9 @@ img{
 
 aside{
     width: 290px;
-    background: #001C15;
+    background: hsl(165, 100%, 5%);
     padding-bottom: 149px;
-    height: 100%;
+    height: fit-content;
 }
 
 aside .container_aside__top{
@@ -230,6 +230,7 @@ aside .container_aside__sidebar a.active{
     color: var(--color-dark);
     border-radius: 4px;
     margin: 0 7px;
+    margin-bottom: 10px;
     padding: 0.5rem  0rem 0.5rem 2rem;
 }
 
