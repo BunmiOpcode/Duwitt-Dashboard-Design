@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Material icon-->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="/newclone/dashboard-html/buy-pages/buy.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="container_aside__top">
+                <div class="container_aside__logo">
+                    <img src="/newclone/dashboard-html/images/logo.png" alt="duwitt">
+                </div>
+                <div class="container_aside__close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div> 
+            <div class="container_aside__sidebar">
+                <a href="../index.html">
+                    <span class="material-icons-sharp" id="dashboard-icon">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <h3 class="container_aside__sidebar__container_aside__sidebar__side-headings">Crypto</h3>
+                <a href="../buy-pages/search-offers.html">
+                    <span class="material-icons-sharp">
+                        monetization_on
+                    </span>
+                    <h3>Buy Crypto</h3>
+                </a>
+                <a href="./search-offers.html" class="active">
+                    <span class="material-icons-sharp">
+                        payments
+                    </span>
+                    <h3>Sell Crpto</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Gift Cards</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        credit_card
+                    </span>
+                    <h3>Sell gift card</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Trade</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        group
+                    </span>
+                    <h3>Active Trade(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        sync
+                    </span>
+                    <h3>Past Trades(s)</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Vendor Tools</h3>
+                <a href="../create-crypto-offer-pages/buy-offer.html">
+                    <span class="material-icons-sharp">
+                        loyalty
+                    </span>
+                    <h3>Create Crypto offer</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add_card
+                    </span>
+                    <h3>Create Gift cards offer</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        sell
+                    </span>
+                    <h3>My offer(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        confirmation_number
+                    </span>
+                    <h3>Create Ticket(s)</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Du More</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        shopping_basket
+                    </span>
+                    <h3>Wallet(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        school
+                    </span>
+                    <h3>Academy</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_add
+                    </span>
+                    <h3>Affiliates</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a> 
+            </div>
+        </aside>
+        <!-- end of aside -->
+        <main>
+            <div class="container_main_nav">
+                <div class="container_main_nav-left">
+                    <h1 class="">Sell Crypto</h1>
+                    <img src="../images/feed-rocket.png" class="container_main_nav-image" alt="">
+                </div>
+                <!-- TOP RIGHT -->
+                <div class="container_main_nav__right">
+                    <div class="container_main_nav__right__top">
+                        <button id="menu-btn">
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+                        <div class="container_main_nav__right-cont">
+                            <div class="toggler">
+                                <span class="material-icons-sharp">toggle_on</span>
+                                <p>Switch to Vendor</p>  
+                            </div>
+                            <div class="notification">
+                                <span class="material-icons-sharp">
+                                    notifications
+                                </span>
+                            </div>
+                            <div class="profile">
+                                <span class="material-icons-sharp">
+                                    account_circle
+                                </span>
+                                <p>Joemicy</p> 
+                                <div class="dropdown">
+                                    <span class="material-icons-sharp">
+                                        keyboard_arrow_down
+                                    </span>
+                                    <div class="dropdown-content">
+                                        <a href="/profile-pages/profile.html">My Profile</a>
+                                        <a href="#">Settings</a>
+                                        <a href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF TOP -->
+                </div>
+            </div>
+            <div class="container-back">
+                <a href="../sell-pages/search-offers.html"><span class="material-icons-sharp">
+                    arrow_back
+                </span></a>
+                <h4>Back</h4>
+            </div>
+            <div class="container_main_header">
+                <h2>1 BTC = 14,336,373.72 NGN</h2>
+            </div>
+            <div class="container-first">
+                <div class="container-first-group">
+                    <label for="pay">I will pay</label>
+                    <input type="text" name="" id="" placeholder="Enter Amount">
+                    <span>
+                        <p>USD</p>
+                    </span>
+                </div>
+                <div class="container-first-group">
+                    <img src="../images/convert.png" alt="convert">
+                </div>
+                <div class="container-first-group">
+                    <label for="pay">I will receive</label>
+                    <input type="text" name="" id="" placeholder="Enter Amount">
+                    <span>
+                        <p>BTC</p>
+                    </span>
+                </div>
+                <div class="container-first-group">
+                    <a href="./sell-crypto-chart.html">Start Trade</a>
+                </div>
+            </div>
+            <!--------------------- BUYTERS PROFILE AND ABOUT ----------------->
+            <div class="container-second">
+                <div class="container-second-buyers-profile">
+                    <h2>Buyer's profile</h2>
+                    <div class="container-second-buyers-profile-content">
+                        <div class="container-second-buyers-profile-top">
+                            <div class="container-second-buyers-profile-top-image">
+                                <img src="../images/bunmi.jpg" alt="">
+                            </div>
+                            <div class="container-second-buyers-profile-right">
+                                <div class="container-second-buyers-profile-right-top">
+                                    <h2>JOEMICKY</h2>
+                                    <img src="../images/canada-flag.png" alt="">
+                                </div>
+                                <div class="container-second-buyers-profile-right-top">
+                                    <p>Member since 2010</p>
+                                    <img src="../images/crown.png" alt="">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="container-second-buyers-profile-bottom">
+                            <ul>
+                                <li>ID verification</li>
+                                <li>Phone Number Verification</li>
+                                <li>Email Verification</li>
+                                <li>Address</li>
+                            </ul>
+                            <ul>
+                                <li class="verified"><img src="../images/check.png" alt="">verified</li>
+                                <li class="verified"><img src="../images/check.png" alt="">verified</li>
+                                <li class="verified"><img src="../images/check.png" alt="">verified</li>
+                                <li class="verified"><img src="../images/check.png" alt="">verified</li>
+                                
+                            </ul>
+                            <ul class="profile-bottom-last">
+                                <li>Feedbacks
+                                    <p>80% Positve rating</p>
+                                </li>
+                                <li>Trades
+                                    <p>150 Trades</p>
+                                </li>
+                                <li>Average Trading Time
+                                    <p>5 minutes</p></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="container-second-about">
+                        <h2>About this offer</h2>
+                        <div class="container-second-about-content">
+                            <ul class="container-second-about-content-left">
+                                <li>Seller's rate</li>
+                                <li>Buy limits</li>
+                                <li>Duwitt charge</li>
+                                <li>Trade time limit</li>
+                            </ul>
+                            <ul class="container-second-about-content-right">
+                                <li>13,957,865.44 NGN</li>
+                                <li>Min 7,150 NGN - Max 78,083 NGN</li>
+                                <li>0.5%</li>
+                                <li>30 Mintues </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------- OFFER TERMS ----------------->
+                
+                <div class="container-third">
+                    <h2>Offer Terms</h2>
+                    <div class="container-third-offer-terms">
+                        <div class="container-third-offer-terms-duwitt-terms">
+                            <h2>Duwitt Terms</h2>
+                            <ol type="1">
+                                <li>1. Before a trade starts, the seller selects the bank account they’ll receive payment to and the buyer selects the account they will send funds to.</li>
+                                <li>2. When the seller is ready to start the trade, they'll share their bank account details with the buyer.</li>
+                                <li>3. The buyer makes the payment to the seller's specified account.</li>
+                                <li>4. We recommend the buyer uploads a screenshot of the transaction, featuring the transaction reference number, as proof of payment.</li>
+                            </ol>
+                        </div>
+                        <div class="container-third-offer-terms-line"></div>
+                        <div class="container-third-offer-terms-vendors-terms">
+                            <h2>Vendors Terms</h2>
+                            <ol type="1">
+                                <li>1. Before a trade starts, the seller selects the bank account they’ll receive payment to and the buyer selects the account they will send funds to.</li>
+                                <li>2. When the seller is ready to start the trade, they'll share their bank account details with the buyer.</li>
+                                <li>3. The buyer makes the payment to the seller's specified account.</li>
+                                <li>4. We recommend the buyer uploads a screenshot of the transaction, featuring the transaction reference number, as proof of payment.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--------------------- ACTIVE TRADES ----------------->
+                <div class="container-feeback-trades">
+                    <table>
+                        
+                        <caption>Feedback From Traders</caption>
+                        
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="container-feeback-trades-profile">
+                                        <img src="../images/bunmi.jpg"  class="profile-image" alt=""> 
+                                        <h4>JIDEBTC</h4>
+                                        <img src="../images/canada-flag.png" class="flag" alt="">
+                                    </div>
+                                    <p class="seen">seen 10 mintues ago</p>
+                                </td>
+                                <td class="bank-transfer">Bank Transfer</td>
+                                <td class="speed">VERY FAST</td>
+                                <td>
+                                    <div class="container-feeback-trades-profile">
+                                        <img src="../images/thumb-up.png"  class="flag" alt=""> 
+                                        <p class="rating">Positive Rating</p>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="container-feeback-trades-profile">
+                                            <img src="../images/bunmi.jpg"  class="profile-image" alt=""> 
+                                            <h4>JIDEBTC</h4>
+                                            <img src="../images/canada-flag.png" class="flag" alt="">
+                                        </div>
+                                        <p class="seen">seen 10 mintues ago</p>
+                                    </td>
+                                    <td class="bank-transfer">Bank Transfer</td>
+                                    <td class="speed">VERY FAST</td>
+                                    <td>
+                                        <div class="container-feeback-trades-profile">
+                                            <img src="../images/thumb-down.png"  class="flag" alt=""> 
+                                            <p class="rating">Positive Rating</p>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="container-feeback-trades-profile">
+                                                <img src="../images/bunmi.jpg"  class="profile-image" alt=""> 
+                                                <h4>JIDEBTC</h4>
+                                                <img src="../images/canada-flag.png" class="flag" alt="">
+                                            </div>
+                                            <p class="seen">seen 10 mintues ago</p>
+                                        </td>
+                                        <td class="bank-transfer">Bank Transfer</td>
+                                        <td class="speed">VERY FAST</td>
+                                        <td>
+                                            <div class="container-feeback-trades-profile">
+                                                <img src="../images/thumb-up.png"  class="flag" alt=""> 
+                                                <p class="rating">Positive Rating</p>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </main>
+                        <!-- -------------END OF MAIN--------------- -->
+                    </div>
+                    <script src="index.js"></script>
+                </body>
+                </html>

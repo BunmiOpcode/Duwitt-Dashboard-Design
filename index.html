@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Material icon-->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="container_aside__top">
+                <div class="container_aside__logo">
+                    <img src="images/logo.png" alt="duwitt">
+                </div>
+                <div class="container_aside__close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div> 
+            <div class="container_aside__sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp" id="dashboard-icon">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                
+                <h3 class="container_aside__sidebar__side-headings">Crypto</h3>
+                <a href="./buy-pages/search-offers.html">
+                    <span class="material-icons-sharp">
+                        monetization_on
+                    </span>
+                    <h3>Buy Crypto</h3>
+                </a>
+                <a href="./sell-pages/search-offers.html">
+                    <span class="material-icons-sharp">
+                        payments
+                    </span>
+                    <h3>Sell Crpto</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Gift Cards</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        credit_card
+                    </span>
+                    <h3>Sell gift card</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Trade</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        group
+                    </span>
+                    <h3>Active Trade(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        sync
+                    </span>
+                    <h3>Past Trades(s)</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Vendor Tools</h3>
+                <a href="./create-crypto-offer-pages/buy-offer.html">
+                    <span class="material-icons-sharp">
+                        loyalty
+                    </span>
+                    <h3>Create Crypto offer</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add_card
+                    </span>
+                    <h3>Create Gift cards offer</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        sell
+                    </span>
+                    <h3>My offer(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        confirmation_number
+                    </span>
+                    <h3>Create Ticket(s)</h3>
+                </a>
+                <h3 class="container_aside__sidebar__side-headings">Du More</h3>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        shopping_basket
+                    </span>
+                    <h3>Wallet(s)</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        school
+                    </span>
+                    <h3>Academy</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_add
+                    </span>
+                    <h3>Affiliates</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a> 
+            </div>
+        </aside>
+        <!-- end of aside -->
+        <main>
+            <div class="container_main_nav">
+                <h1 class="name">Hello Joseph 👋🏼,</h1>
+                <!-- TOP RIGHT -->
+                <div class="container_main_nav__right">
+                    <div class="container_main_nav__right__top">
+                        <button id="menu-btn">
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+                        <div class="container_main_nav__right-cont">
+                            <div class="toggler">
+                                <span class="material-icons-sharp">toggle_on</span>
+                                <p>Switch to Vendor</p>  
+                            </div>
+                            <div class="notification">
+                                <span class="material-icons-sharp">
+                                    notifications
+                                </span>
+                            </div>
+                            <div class="profile">
+                                <span class="material-icons-sharp">
+                                    account_circle
+                                </span>
+                                <p>Joemicy</p> 
+                                <div class="dropdown">
+                                    <span class="material-icons-sharp">
+                                        keyboard_arrow_down
+                                    </span>
+                                    <div class="dropdown-content">
+                                        <a href="/profile-pages/profile.html">My Profile</a>
+                                        <a href="#">Settings</a>
+                                        <a href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END OF TOP -->
+                </div>
+            </div>
+            <div class="container_main_header">
+                <h2>Wallet balance</h2>
+            </div>
+            <div class="wallet_card">
+                <div class="wallet_card_bitcoin">
+                    <img src="images/bitcoin.png" class="wallet-bitcoin-img" alt="">
+                    <div class="text">
+                        <h3>Available Balance</h3>
+                        <h1>$534.21</h1>
+                        <h6>0.0123678 USDT</h6>
+                    </div>
+                    <div class="eyeslash">
+                        <span class="material-icons-sharp">
+                            visibility
+                        </span>
+                    </div>
+                </div>
+                <!-- end of bitcoin -->
+                <div class="wallet_card_ethereum">
+                    <img src="images/trust-wallet.png" class="wallet-ethereum-img" alt="">
+                    <div class="text">
+                        <h3>Available Balance</h3>
+                        <h1>$534.21</h1>
+                        <h6>0.0123678 USDT</h6>
+                    </div>
+                    <div class="eyeslash">
+                        <span class="material-icons-sharp">
+                            visibility
+                        </span>
+                    </div>
+                </div>
+                <!-- end of expenses -->
+                <div class="wallet_card_tether">
+                    <img src="images/expense.png"  class="wallet-tether-img" alt="">
+                    <div class="text">
+                        <h3>Available Balance</h3>
+                        <h1>$534.21</h1>
+                        <h6>0.0123678 USDT</h6>
+                    </div>
+                    <div class="eyeslash">
+                        <span class="material-icons-sharp">
+                            visibility
+                        </span>
+                    </div>
+                </div>
+                <!-- end of trust-wallet -->
+            </div>
+            <!-- -------------------end of wallet----------------- -->
+            
+            <!--------------------- ACTIVE TRADES ----------------->
+            <div class="active-trades">
+                <table>
+                    
+                    <caption>Active Trades</caption>
+                    
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="pic">
+                                    <img src="images/bunmi.jpg" alt=""> 
+                                    <p>JIDEBTC</p>
+                                    <p>Deuce</p>
+                                </div>
+                            </td>
+                            <td>Sep 28,2022 10:25pm</td>
+                            <td><a id="buy-offer">Buy offer</a></td>
+                            <td>Bank Transfer</td>
+                            <td>NGN 10,000 =0.0001789<br>
+                                NGN13,010,000/BTC 
+                            </td>
+                            <td class="success">New Trade</td>
+                            <td><a class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pic">
+                                    <img src="images/bunmi.jpg" alt=""> 
+                                    <p>Deuce</p>
+                                    <p>Deuce</p>
+                                </div>
+                            </td>
+                            <td>Sep 28,2022 10:25pm</td>
+                            <td><a id="sell-offer">Sell offer</a></td>
+                            <td>Bank Transfer</td>
+                            <td>NGN 10,000 =0.0001789<br>
+                                NGN13,010,000/BTC 
+                            </td>
+                            <td class="success">New Trade</td>
+                            <td><a class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pic">
+                                    <img src="images/bunmi.jpg" alt=""> 
+                                    <p>Deuce</p>
+                                    <p>Deuce</p>
+                                </div>
+                            </td>
+                            <td>Sep 28,2022 10:25pm</td>
+                            <td><a id="buy-offer">Buy offer</a></td>
+                            <td>Bank Transfer</td>
+                            <td>NGN 10,000 =0.0001789<br>
+                                NGN13,010,000/BTC 
+                            </td>
+                            <td class="warning">Ongoing Trade</td>
+                            <td><a class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pic">
+                                    <img src="images/bunmi.jpg" alt=""> 
+                                    <p>Deuce</p>
+                                    <p>Deuce</p>
+                                </div>
+                            </td>
+                            <td>Sep 28,2022 10:25pm</td>
+                            <td><a id="sell-offer">Sell offer</a></td>
+                            <td>Bank Transfer</td>
+                            <td>NGN 10,000 =0.0001789<br>
+                                NGN13,010,000/BTC 
+                            </td>
+                            <td class="warning">Ongoing Trade</td>
+                            <td><a class="btn">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- -------------  REFER AND EARN --------------- -->
+            <div class="con">
+                <div class="content">
+                    <h2>Refer and Earn</h2>
+                    <p>Refer Your Friends And Loved Ones To Duwiit And Earn Points</p>
+                    <div class="link">
+                        <input type="text" name="url" id="url" placeholder="https://Duwiit.com/register?r=RGzQvK418dA">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                file_copy
+                            </span>
+                            Copy link
+                        </a>
+                    </div>
+                    <h4>Share referal link on social Media</h4>
+                    <div class="socials">
+                        <a href="#" class="social">
+                            <img src="images/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            
+                            <img src="images/messenger.png" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="images/whatsapp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="recent-activity">
+                    <h2>Recent Activity</h2>
+                    <div class="circles">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!-- -------------END OF MAIN--------------- -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
